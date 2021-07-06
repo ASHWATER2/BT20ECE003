@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        SIGN IN
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="signin.css" />
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="headline">
+            <img src="pheonix.jpg" width="150px" height="100px" />
+            <h1>Sign in to Pheonix</h1>
+        </div>
+
+        <div class="info">
+            <form method="POST">
+                <label for="username">Username or Email address</label><br/>
+                <input type="email" name="username" id="username" required="required" /><br/><br/>
+                <div class="forg">
+                    <label for="password">Password</label>
+                    <label><a href="reset.xhtml">Forget Password?</a></label><br/>
+                </div>
+                <input type="password" name="password" id="password" required="required" minlength="8" /><br/><br/>
+
+                <input type="submit" value="Sign in" id="submit" onclick="subm(this.form)" />
+            </form>
+        </div>
+
+    </div>
+
+    <div class="sub">
+        <p>New to Pheonix?<a href="signup.xhtml">Create an account</a></p>
+    </div>
+
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privecy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        function subm(form) {
+            username = new Array("BT20ECE001@IIITN.AC.IN", "BT20ECE002@IIITN.AC.IN", "BT20ECE003@IIITN.AC.IN", "BT20ECE004@IIITN.AC.IN", "BT20ECE005@IIITN.AC.IN");
+            password = new Array("12345678", "21345678", "31245678", "43215678", "54321876");
+            if ((form.username.value == username[0] && form.password.value == password[0]) || (form.username.value == username[1] && form.password.value == password[1]) || (form.username.value == username[2] && form.password.value == password[2]) || (form.username.value == username[3] && form.password.value == password[3]) || (form.username.value == username[4] && form.password.value == password[4])) {
+                window.open("../home page/lab3t.html");
+            } else {
+                alert("Incorrect Username or Password.\n Please try again!");
+                form.username.focus();
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

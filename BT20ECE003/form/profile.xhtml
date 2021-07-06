@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        PROFILE
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/Javascript">
+        function sign(){var msgWindow=window.open("signin.html")} function subm() { alert("Your profile has been updated!!! \nClick OK to move to home page"); } function canc(){ var x= confirm("Are you sure you don't want to edit you profile") }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <table class="menu">
+            <tr>
+                <td>
+                    <div class="menu-bar">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-list"></i></a>
+                                <div class="sub-menu-0">
+                                    <ul>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Culture</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Literature</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Science</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Engineering</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Medical</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h2>Pheonix</h2>
+        <h2 class="account"><a href="#" onclick="sign()"><i class="fa fa-user-circle"></i>User account</a></h2>
+    </div>
+    <div class="profile">
+        <form method="POST">
+            <div class="person">
+                <h2 style="color: white;">Personal Information:</h2>
+
+                <fieldset>
+                    <label for="fname">First Name:</label>&nbsp;
+                    <input type="text" name="fname" id="fname" required="required" /><br/>
+                    <label for="lname">Last Name:</label>&nbsp;
+                    <input type="text" name="lname" id="lname" required="required" /><br/>
+                    <label for="gender">Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="gender" id="gender" style="width: 180px;height: 40px;">
+                <option value=" ">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+                </select><br/>
+                    <label for="country">Country:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="country" id="country" /><br/>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" style="width: 18%;" /><br/>
+
+                </fieldset>
+
+            </div>
+
+            <hr style="width: 90%;position: relative;left: 5%;height: 2px; background-color: black;" />
+            <div class="cont">
+                <h2 style="color: whitesmoke;">Contact Information:</h2>
+
+                <fieldset>
+                    <label for="phone-num">Phone Number:</label>
+                    <input type="tel" name="phone-num" id="phone-num" maxlength="10" /><br/>
+                    <label for="address">Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </fieldset>
+
+            </div>
+
+            <hr style="width: 90%;position: relative;left: 5%;height: 2px; background-color: black;" />
+            <div class="prof ">
+                <h2 style="color:whitesmoke">Professional Information:</h2>
+
+                <fieldset>
+                    <legend style="font-size: x-large;">About Profession</legend>
+
+                    <label for="profession ">Which one best describes you:</label><br/>
+                    <input type="radio" name="profession" id="profession" value="student" />
+                    <label for="profession ">Student</label><br/>
+                    <input type="radio" name="profession" id="profession" value="teacher" />
+                    <label for="profession">Teacher</label><br/>
+                    <input type="radio" name="profession" id="profession" value="industry" />
+                    <label for="profession">Industry Person</label><br/>
+                    <input type="radio" name="profession" id="profession" value="other" />
+                    <label for="profession">Others</label><br/>
+
+                    <br/>
+                    <label for="alma-matter">Alma-Matter:</label>
+                    <input type="text" name="alma-matter" id="alma-matter" maxlength="80" size="40" /><br/>
+                    <label for="work">College/Institution/Company name:</label>
+                    <input type="text" name="comp" id="work" style="width: 20%;" /><br/>
+                    <label for="work-exp">Work Experience:</label>
+                    <input type="number" name="work-exp" id="work-exp" min="0" max="15" style="width: 18%;" /><br/>
+                </fieldset>
+
+            </div>
+            <hr style="width: 90%;position: relative;left: 5%;height: 2px; background-color:black" />
+            <br/> <br/>
+
+            <div class="clearfix ">
+                <button type="button" class="cancelbtn" id="submit" onclick="canc()">
+                    <a href="../home page/lab3t.html">Cancel</a>
+                    </button>
+                <button type="submit" class="signupbtn" id="submit" onclick="subm()"><a href="../home page/lab3t.html">Save</a></button>
+            </div>
+        </form>
+    </div>
+    <div class="menu2">
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privecy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

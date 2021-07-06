@@ -1,0 +1,763 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lemonchiffon;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+}
+
+.container ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+.welcome {
+    float: left;
+    font-size: 220%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.claock {
+    float: right;
+    font-size: 210%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cookie {
+    float: right;
+    font-size: 210%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.out {
+    float: right;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.out a {
+    text-decoration: none;
+    color: rgb(248, 17, 17);
+}
+
+.out:hover,
+.out a:hover {
+    background: #2bab0d;
+    border-radius: 10px;
+    color: white;
+}
+
+.log {
+    background-color: white;
+    border: 2px solid black;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.log ul li {
+    font-size: 200%;
+    list-style: none;
+    float: right;
+    width: 10%;
+}
+
+.col-md-12 {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: auto;
+}
+
+.left {
+    background-color: tomato;
+    width: 20%;
+    position: relative;
+}
+
+.text {
+    color: orange;
+    text-align: center;
+    background-color: navy;
+    width: 60%;
+    position: relative;
+}
+
+.right {
+    background-color: tomato;
+    width: 20%;
+    position: relative;
+}
+
+.col-md-12 img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    z-index: 5;
+    background: rosybrown;
+    position: relative;
+}
+
+.menu-bar {
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.sub-menu-0 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-0 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li {
+    width: 150px;
+    padding: 8px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li a:hover {
+    color: turquoise;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 120px;
+    padding: 8px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: turquoise;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li {
+    width: 200px;
+    padding: 8px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover {
+    color: turquoise;
+}
+
+.sub-menu-3 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li {
+    width: 150px;
+    padding: 8px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li a:hover {
+    color: turquoise;
+}
+
+.sub-menu-4 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-4 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-4 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-4 ul li {
+    width: 200px;
+    padding: 8px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-4 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-4 ul li a:hover {
+    color: turquoise;
+}
+
+.xyz {
+    background-color: rgb(0, 100, 0);
+    color: white;
+}
+
+.xyz a {
+    color: white;
+}
+
+.xyz ul li:hover {
+    padding: 8px;
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.textmover {
+    background-color: white;
+    width: 78%;
+    height: 40px;
+    position: relative;
+    left: 11%;
+}
+
+.slider {
+    border-top: 1px solid black;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+.slider figure div {
+    float: left;
+    width: 20%;
+}
+
+.slider figure img {
+    width: 100%;
+    float: left;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0;
+    animation: 20s hell infinite;
+}
+
+@keyframes hell {
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: -0%;
+    }
+    12% {
+        left: -100%;
+    }
+    22% {
+        left: -100%;
+    }
+    24% {
+        left: -200%;
+    }
+    34% {
+        left: -200%;
+    }
+    36% {
+        left: -300%;
+    }
+    46% {
+        left: -300%;
+    }
+    48% {
+        left: -400%;
+    }
+    58% {
+        left: -400%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    72% {
+        left: -200%;
+    }
+    82% {
+        left: -200%;
+    }
+    84% {
+        left: -100%;
+    }
+    94% {
+        left: -100%;
+    }
+    96% {
+        left: 0%;
+    }
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figcaption {
+    display: block;
+}
+
+.main-div-0 {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.maindiv2 {
+    height: auto;
+    float: left;
+    width: 17%;
+    background-color: rgb(0, 100, 0);
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    background-size: 100% 100%;
+}
+
+.maindiv3 {
+    height: auto;
+    float: left;
+    width: 17%;
+    background-color: rgb(0, 100, 0);
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    background-size: 100% 100%;
+}
+
+.wrapper {
+    float: left;
+    width: 62%;
+    border: 10px solid beige;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width:1000px) {
+    .maindiv2,
+    .wrapper,
+    .maindiv3 {
+        width: 100%;
+    }
+}
+
+header {
+    background-color: yellow;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    margin: 0px;
+}
+
+footer {
+    font-size: 150%;
+    text-align: center;
+    clear: both;
+    color: #ffffff;
+    background-color: #aeaca8;
+    height: auto;
+    min-height: 30px;
+}
+
+section.courses {
+    float: left;
+    width: 72%;
+    border-right: 1px solid #eeeeee;
+}
+
+article {
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+figure {
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #eeeeee;
+}
+
+figure img {
+    width: 70%;
+}
+
+.aab {
+    float: left;
+    width: 40%;
+    margin: 20px;
+}
+
+@media screen and (max-width:100px) {
+    figure,
+    .aab {
+        width: 100%;
+    }
+}
+
+figcaption {
+    font-size: 90%;
+    text-align: left;
+}
+
+aside {
+    width: 25%;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #de6581;
+    text-decoration: none;
+}
+
+aside section a:hover {
+    color: #985d6a;
+    background-color: #efefef;
+}
+
+.ash ul {
+    display: block;
+    list-style: none;
+    color: white;
+}
+
+.ash ul li {
+    width: 100%;
+    border-bottom: 1px dotted white;
+}
+
+.ash ul li img {
+    width: 100%;
+    height: 280px;
+}
+
+.ash ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ash ul li a:hover {
+    color: rgb(252, 9, 9);
+}
+
+.ash1 ul {
+    display: block;
+    list-style: none;
+    color: white;
+}
+
+.ash1 ul li {
+    width: 100%;
+    border-bottom: 1px dotted white;
+}
+
+.ash1 ul li img {
+    width: 100%;
+    height: 220px;
+}
+
+.ash1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ash1 ul li a:hover {
+    color: rgb(252, 9, 9)
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    margin: 0px 0px 10px 0px;
+    color: #de6581;
+}
+
+aside h2 {
+    padding: 30px 0px 10px 0px;
+    color: #de6581;
+}
+
+.quate {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background: #2bab0d;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.quates {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: inline-flex;
+}
+
+.quates img {
+    margin: 5px;
+    width: 20%;
+}
+
+@media screen and (max-width:1000px) {
+    .quates img {
+        width: 200px;
+    }
+}
+
+footer.footer-last {
+    text-align: center;
+    font-size: 150%;
+    height: 50px;
+    padding: 7px 0px 0px 20px;
+    clear: both;
+    background-color: #aeaca8;
+}
+
+.footer-last {
+    width: 100%;
+    position: relative;
+}
+
+.book1 {
+    width: 100%;
+    background-color: white;
+}
+
+.container2 {
+    margin: 20px;
+    padding: 20px;
+}
+
+#display {
+    border: 5px solid blue;
+    width: 50%;
+    position: relative;
+    left: 20%;
+}
+
+#display td {
+    text-align: center;
+}

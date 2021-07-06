@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(pheonix.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.nav {
+    width: 100%;
+    background-color: black;
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid #aaa;
+    display: inline-flex;
+}
+
+.nav h2 {
+    padding-top: 10px;
+    color: white;
+    font-size: 160%;
+    float: left;
+}
+
+.nav h2.account {
+    position: relative;
+    left: 100%;
+    transform: translate(-210%);
+    float: right;
+}
+
+.menu-bar {
+    position: relative;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 50px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-bar ul li:hover {
+    background: #999;
+    border-radius: 3px;
+}
+
+.sub-menu-0 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-0 {
+    display: block;
+    position: absolute;
+    background: rgb(240, 173, 229);
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li {
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-0 ul li a:hover {
+    color: rgb(250, 2, 2);
+}
+
+.fa-user-circle {
+    color: white;
+}
+
+.profile {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px;
+    padding: 5px;
+}
+
+.person fieldset,
+.cont fieldset,
+.prof fieldset {
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+label {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+#submit {
+    padding: 5px;
+    text-align: center;
+    width: 20%;
+    position: relative;
+    left: 30%;
+}
+
+.menu2 {
+    margin-left: 10px;
+    border-radius: 6px;
+    background-color: rgb(233, 220, 41);
+    text-align: center;
+    position: relative;
+    transform: translateY(80px);
+}
+
+.menu2 ul {
+    padding-top: 15px;
+    height: 35px;
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu2 ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu2 ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.active,
+.menu2 ul li a:hover {
+    border-radius: 6px;
+    background-color: rgb(27, 219, 27);
+    color: white;
+}
+
+#submit a {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#submit a:hover {
+    border-radius: 10px;
+    background-color: rgb(27, 219, 27);
+    color: white;
+}
+
+.nav h2 a {
+    text-decoration: none;
+    color: white;
+}

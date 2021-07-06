@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        SIGN UP
+    </title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script language="Javascript">
+        function canc() {
+            var x = confirm("Are you sure you don't want to sign up!")
+            page1 = "../home page/lab3t.html"
+            page2 = "#"
+            if (x == true) {
+                self.location.href = page1;
+            } else {
+                self.location.href = page2;
+            }
+
+        }
+
+        function registration() {
+            var usersname = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var pswrepeat = document.getElementById("pswrepeat").value;
+
+            if (usersname == '') {
+                alert("Please enter username");
+            } else if (!letters.test(usersname)) {
+                alert("Username must only contain alphabet characters");
+            } else if (email == '') {
+                alert("Please enter your user email id");
+            } else if (!filter.test(email)) {
+                alert("Invalid email");
+            } else if (password == '') {
+                alert("Please enter Password");
+            } else if (pswrepeat == '') {
+                alert("Enter Repeat Password field");
+            } else if (password != pswrepeat) {
+                alert("Password does not matches with repeat password");
+            } else {
+                alert("Your account has been created successfully!!");
+                window.location.href = "signin.html"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="nav">
+        <table class="menu">
+            <tr>
+                <td>
+                    <div class="menu-bar">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-list"></i></a>
+                                <div class="sub-menu-0">
+                                    <ul>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Culture</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Literature</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Science</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Engineering</a>
+                                        </li>
+                                        <li>
+                                            <a href="../home page/lab3t.html">Medical</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h2>Pheonix</h2>
+        <h2 class="account"><a href="signin.html"><i class="fa fa-user-circle"></i>User account</a></h2>
+    </div>
+    <div class="signup">
+        <div class="box">
+            <p>Please fill in this form to create an account.</p>
+            <hr/>
+            <div class="headline">
+                <img src="pheonix.jpg" width="150px" height="100px" />
+                <h1>Sign up to Pheonix</h1>
+            </div>
+
+            <div class="info">
+                <form method="POST">
+                    <label for="username">Username</label><br/>
+                    <input type="text" placeholder="Enter Uername" name="username" id="username" required="required" /><br/><br/>
+                    <label for="username">Email address</label><br/>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required="required" /><br/><br/>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required="required" minlength="8" /><br/><br/>
+                    <label for="psw-repeat">Repeat Password</label>
+                    <input type="password" placeholder="Repeat Password" name="pswrepeat" id="pswrepeat" required="required" /><br/><br/>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" /> Remember me
+                      </label><br/>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms and Privacy</a>.</p><br/>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" id="submit1" onclick="canc()">Cancel</button>
+                        <button type="submit" class="signupbtn" id="submit2" onclick="registration()">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="menu2">
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privecy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
